@@ -43,10 +43,10 @@ function App() {
     <Router>
       <Navbar title="textUtils" aboutText="About" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
+      <TextForm heading="TextUtils - Word Counter Character Counter" mode={mode} showAlert={showAlert} />
       <div className="container my-3">
         <Routes>
           <Route path="/about" element={<About mode={mode} />} />
-          <Route path="/" element={<TextForm heading="TextUtils - Word Counter Character Counter" mode={mode} showAlert={showAlert} />} />
         </Routes>
       </div>
     </Router>
